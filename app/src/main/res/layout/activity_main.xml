@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pink"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/edt_firstname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/editbox_background"
+        android:ems="10"
+        android:hint="Enter First name"
+        android:inputType="textPersonName"
+        android:padding="15dp">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/edt_lastname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_firstname"
+        android:layout_marginTop="37dp"
+        android:layout_marginBottom="37dp"
+        android:background="@android:drawable/editbox_background"
+        android:ems="10"
+        android:hint="Enter Last name"
+        android:inputType="textPersonName"
+        android:padding="15dp">
+
+    </EditText>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_lastname"
+        android:gravity="center"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/btn_insert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:backgroundTint="@color/btncolor"
+            android:ems="5"
+            android:padding="15dp"
+            android:text="INSERT"
+            android:textColor="@color/black"
+            android:textSize="30sp">
+
+        </Button>
+
+        <Button
+            android:id="@+id/btn_display"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/btncolor"
+
+            android:ems="5"
+            android:padding="15dp"
+            android:text="DISPLAY"
+            android:textColor="@color/black"
+            android:textSize="30sp">
+
+        </Button>
+    </LinearLayout>
+
+</RelativeLayout>

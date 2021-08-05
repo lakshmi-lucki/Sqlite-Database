@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="6dp"
+    android:background="@color/pink"
+    tools:context=".EditSingleRecordActivity">
+
+    <EditText
+        android:id="@+id/editname"
+        android:hint="Name"
+        android:ems="10"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        android:padding="10dp"
+        android:background="@android:drawable/editbox_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </EditText>
+    <EditText
+        android:id="@+id/editlname"
+        android:hint="LastName"
+        android:ems="10"
+        android:padding="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/editname"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        android:background="@android:drawable/editbox_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </EditText>
+
+    <Button
+        android:id="@+id/btn_update"
+        android:textSize="30sp"
+        android:text="UPDATE"
+        android:padding="5dp"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/editlname"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </Button>
+</RelativeLayout>
